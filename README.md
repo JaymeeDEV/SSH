@@ -1,6 +1,3 @@
-## SSH
-My knowledge of SSH condensed into bite sized notes.
-
 ### What is SSH?
 SSH or Secure Shell is a protocol/language for machines to communicate with each other just like FTP/HTTP(S).
 
