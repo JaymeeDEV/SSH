@@ -44,7 +44,7 @@ Generate private/public key pair: `ssh-keygen -t rsa -b 4096 -C "youremail@addre
 
 Add private key identity: `ssh-add ~/.ssh/yourroute/yourprivatekey`
 
-Copy the contents of your public key file: `pbcopy < ~/.ssh/yourroute/yourpublickey.pub`
+Copy the contents of your public key file: `pbcopy < ~/.ssh/yourroute/yourpublickey.pub` (install xclip on Linux)
 
 Show hidden files: `ls -a`
 
