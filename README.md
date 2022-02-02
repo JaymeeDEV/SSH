@@ -34,7 +34,7 @@ Keep in mind, you can only decrypt messages from your own public key by using yo
 SSH uses both symmetric and asymmetric encrpytion. Since asymmetric is more time consuming, generally we use asymmetric encrptyion to share a public key, and from there we use symmetric encryption to make things faster.
 
 ### Hashing
-This topic is complex, I recommend reading the resources at the end to learn more if you are interested.
+This topic is complex, I recommend reading the HMAC resource at the end to learn more if you are interested.
 
 Hashing is another type of cryptography used in SSH. In the case where someone manages to convince the client or host that they have access to tamper with the messages, we use hashes to verify the authentication of the messages. This is done by using ***HMAC*** (hash-based message authentication codes).
 
@@ -44,7 +44,7 @@ Generate private/public key pair: `ssh-keygen -t rsa -b 4096 -C "youremail@addre
 
 Add private key identity: `ssh-add ~/.ssh/yourroute/yourprivatekey`
 
-Copy the contents of your public key file: `pbcopy < ~/.ssh/yourroute/yourpublickey.pub` (install xclip on Linux)
+Copy the contents of your public key file (xclip required for Linux): `pbcopy < ~/.ssh/yourroute/yourpublickey.pub`
 
 Show hidden files: `ls -a`
 
@@ -54,6 +54,8 @@ Remove identities: `ssh-add -D`
 
 ### Additional Learning Resources
 What is HMAC? [:link:](https://www.jscape.com/blog/what-is-hmac-and-how-does-it-secure-file-transfers)
+
+Connecting to Github with SSH [:link:](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 Diffie Hellman Key Exchange vs RSA [:link:](https://www.encryptionconsulting.com/diffie-hellman-key-exchange-vs-rsa/)
 
